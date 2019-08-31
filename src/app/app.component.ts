@@ -4,7 +4,16 @@ import { Component } from '@angular/core';
   selector: 'has-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+
 })
 export class AppComponent {
-  title = 'etec-base';
+  peso = 70
+  altura = 1.70
+
+
+  calcular():void {
+    let name = this.peso /(this.altura * this.altura)  
+    alert ("IMC é :" + name)
+ }
+  
 }
